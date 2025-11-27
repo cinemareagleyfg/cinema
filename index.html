@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MixMaster Pro Tools Tutor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom scrollbar for a sleek audio app feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4b5563;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #6b7280;
+      }
+      .waveform-bar {
+        transition: height 0.1s ease;
+      }
+      @keyframes bounce-slow {
+        0%, 100% { transform: translateY(-25%); animation-timing-function: cubic-bezier(0.8,0,1,1); }
+        50% { transform: translateY(0); animation-timing-function: cubic-bezier(0,0,0.2,1); }
+      }
+      
+      /* 3D Flip Card Styles */
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+      .transform-style-3d {
+        transform-style: preserve-3d;
+      }
+      .backface-hidden {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+      }
+      .rotate-y-180 {
+        transform: rotateY(180deg);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body class="antialiased selection:bg-purple-500 selection:text-white transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

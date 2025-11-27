@@ -1,0 +1,7 @@
+{
+  "name": "Copy of MixMaster Pro Tools Tutor",
+  "description": "A 2-week vocational crash course for mixing vocals in Pro Tools Intro, featuring an AI Voice Assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
